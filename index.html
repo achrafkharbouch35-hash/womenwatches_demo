@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ÉLÉA WATCHES — Montres féminines &amp; élégantes</title>
+<meta name="description" content="ÉLÉA WATCHES — montres délicates et modernes pour femmes. Livraison partout au Maroc, commande simple via WhatsApp.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <button class="navbar__burger" id="burgerBtn" aria-label="Ouvrir le menu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <a href="#accueil" class="navbar__logo">ÉLÉA <span>WATCHES</span></a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#accueil" class="nav-link">Accueil</a>
+      <a href="#collection" class="nav-link">Collection</a>
+      <a href="#univers" class="nav-link">Notre univers</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="navbar__actions">
+      <button class="icon-btn" id="searchBtn" aria-label="Rechercher">
+        <svg viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="1.4"/><line x1="21" y1="21" x2="16.2" y2="16.2" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </button>
+      <button class="icon-btn" id="wishlistBtn" aria-label="Liste de souhaits">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M12 20.5s-7.6-4.6-10-9.3C.4 7.8 2.3 4 6 4c2 0 3.5 1 4 2.4C10.5 5 12 4 14 4c3.7 0 5.6 3.8 4 7.2-2.4 4.7-10 9.3-10 9.3z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+        <span class="badge" id="wishlistCount">0</span>
+      </button>
+      <button class="icon-btn" id="cartBtn" aria-label="Panier">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M6 8h12l-1.1 11.2a2 2 0 0 1-2 1.8H9.1a2 2 0 0 1-2-1.8L6 8Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/><path d="M9 8V6a3 3 0 0 1 6 0v2" stroke="currentColor" stroke-width="1.3"/></svg>
+        <span class="badge" id="cartCount">0</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#accueil" class="mobile-menu__link">Accueil</a>
+    <a href="#collection" class="mobile-menu__link">Collection</a>
+    <a href="#univers" class="mobile-menu__link">Notre univers</a>
+    <a href="#contact" class="mobile-menu__link">Contact</a>
+    <a class="mobile-menu__whatsapp" id="mobileWhatsapp" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <div class="hero__text" data-reveal>
+    <p class="hero__label">ÉLÉA / WOMEN'S COLLECTION</p>
+    <h1 class="hero__title">Votre style,<br><em>à votre heure.</em></h1>
+    <p class="hero__desc">Des montres délicates, modernes et féminines pour accompagner chaque moment avec élégance.</p>
+    <div class="hero__actions">
+      <a href="#collection" class="btn btn--dark">Découvrir la collection</a>
+      <a class="btn btn--outline" id="heroWhatsapp" target="_blank" rel="noopener">Commander sur WhatsApp</a>
+    </div>
+  </div>
+
+  <div class="hero__visual" data-reveal-delay>
+    <div class="hero__image">
+      <img src="https://images.unsplash.com/photo-1509048191080-d2984bad6ae5?auto=format&fit=crop&w=1200&q=80" alt="Montre femme rose gold ÉLÉA">
+    </div>
+    <div class="hero__card">
+      <p class="hero__card-name">ÉLÉA EDIT</p>
+      <p class="hero__card-variant">Rose Gold</p>
+      <p class="hero__card-price">349 DH</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TRUST BAR ============ -->
+<section class="trust">
+  <div class="trust__item"><span>♡</span> Livraison partout au Maroc</div>
+  <div class="trust__item"><span>♡</span> Paiement à la livraison</div>
+  <div class="trust__item"><span>♡</span> Commande simple via WhatsApp</div>
+</section>
+
+<!-- ============ COLLECTION ============ -->
+<section class="collection" id="collection">
+  <div class="section-head">
+    <p class="section-eyebrow">La collection</p>
+    <h2 class="section-title">Chaque montre a son caractère.</h2>
+  </div>
+
+  <div class="collection__controls">
+    <div class="filters" id="filters">
+      <button class="filter-chip is-active" data-filter="TOUTES">Toutes</button>
+      <button class="filter-chip" data-filter="CLASSIQUE">Classique</button>
+      <button class="filter-chip" data-filter="ROSE GOLD">Rose Gold</button>
+      <button class="filter-chip" data-filter="MINIMALISTE">Minimaliste</button>
+      <button class="filter-chip" data-filter="LUXE">Luxe</button>
+    </div>
+
+    <div class="sort-wrap">
+      <label for="sortSelect" class="sort-label">Trier</label>
+      <select id="sortSelect" class="sort-select">
+        <option value="recommended">Recommandés</option>
+        <option value="price-asc">Prix croissant</option>
+        <option value="price-desc">Prix décroissant</option>
+        <option value="newest">Nouveautés</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="product-grid" id="productGrid"></div>
+</section>
+
+<!-- ============ BRAND STORY / MOOD ============ -->
+<section class="mood" id="univers">
+  <div class="mood__image">
+    <img src="https://images.unsplash.com/photo-1533139502658-0198f920d8e8?auto=format&fit=crop&w=1400&q=80" alt="Ambiance ÉLÉA Watches">
+  </div>
+  <div class="mood__text" data-reveal>
+    <p class="mood__eyebrow">The Éléa Mood</p>
+    <h2 class="mood__title">Une montre qui ressemble à votre énergie.</h2>
+    <p class="mood__desc">Chez ÉLÉA, chaque pièce est pensée pour suivre votre rythme : douce le matin, affirmée en journée, précieuse le soir. Une allure du quotidien, un caractère féminin assumé, et une élégance qui accompagne vos occasions les plus marquantes.</p>
+  </div>
+</section>
+
+<!-- ============ COLLECTION MOODS ============ -->
+<section class="moods-grid">
+  <div class="mood-card">
+    <img src="https://images.unsplash.com/photo-1547996160-81dfa63595aa?auto=format&fit=crop&w=900&q=80" alt="Style quotidien">
+    <div class="mood-card__label">
+      <span>01 / EVERYDAY</span>
+    </div>
+  </div>
+  <div class="mood-card">
+    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?auto=format&fit=crop&w=900&q=80" alt="Style féminin">
+    <div class="mood-card__label">
+      <span>02 / FEMININE</span>
+    </div>
+  </div>
+  <div class="mood-card">
+    <img src="https://images.unsplash.com/photo-1622434641406-a158123450f9?auto=format&fit=crop&w=900&q=80" alt="Style soirée">
+    <div class="mood-card__label">
+      <span>03 / EVENING</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS ============ -->
+<section class="reviews">
+  <div class="section-head">
+    <p class="section-eyebrow">Ce qu'elles en disent</p>
+    <h2 class="section-title">Des femmes, une élégance partagée.</h2>
+  </div>
+  <div class="reviews__grid">
+    <div class="review-card">
+      <div class="review-card__stars">★★★★★</div>
+      <p class="review-card__text">Très jolie montre, légère et élégante. Je la porte tous les jours.</p>
+      <p class="review-card__author">— Sara, Rabat</p>
+    </div>
+    <div class="review-card">
+      <div class="review-card__stars">★★★★★</div>
+      <p class="review-card__text">Le bracelet est doux et le cadran est magnifique en vrai, encore plus qu'en photo.</p>
+      <p class="review-card__author">— Imane, Casablanca</p>
+    </div>
+    <div class="review-card">
+      <div class="review-card__stars">★★★★★</div>
+      <p class="review-card__text">Commande via WhatsApp très simple, livraison rapide et soignée. Je recommande.</p>
+      <p class="review-card__author">— Yasmine, Marrakech</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INSTAGRAM ============ -->
+<section class="insta">
+  <div class="insta__text">
+    <p class="section-eyebrow">@elea.watches</p>
+    <h2 class="section-title">Votre dose d'inspiration.</h2>
+    <a href="https://instagram.com/elea.watches" target="_blank" rel="noopener" class="btn btn--outline" id="instaBtn">Voir Instagram</a>
+  </div>
+  <div class="insta__grid">
+    <a href="https://instagram.com/elea.watches" target="_blank" rel="noopener" class="insta__item"><img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?auto=format&fit=crop&w=600&q=80" alt="Instagram ÉLÉA 1"></a>
+    <a href="https://instagram.com/elea.watches" target="_blank" rel="noopener" class="insta__item"><img src="https://images.unsplash.com/photo-1585123334904-845d60e97b29?auto=format&fit=crop&w=600&q=80" alt="Instagram ÉLÉA 2"></a>
+    <a href="https://instagram.com/elea.watches" target="_blank" rel="noopener" class="insta__item"><img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=600&q=80" alt="Instagram ÉLÉA 3"></a>
+    <a href="https://instagram.com/elea.watches" target="_blank" rel="noopener" class="insta__item"><img src="https://images.unsplash.com/photo-1585123334904-845d60e97b29?auto=format&fit=crop&w=601&q=80" alt="Instagram ÉLÉA 4"></a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <p class="footer__logo">ÉLÉA WATCHES</p>
+      <p class="footer__tag">Elegance, every second.</p>
+    </div>
+    <div class="footer__links">
+      <a href="#collection">Collection</a>
+      <a href="#collection" data-scroll-filter="TOUTES">Best-sellers</a>
+      <a href="#collection" data-scroll-filter="TOUTES">Nouveautés</a>
+      <a id="footerWhatsapp" target="_blank" rel="noopener">WhatsApp</a>
+      <a href="https://instagram.com/elea.watches" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+  <div class="footer__bottom">© 2026 ÉLÉA WATCHES — Tous droits réservés.</div>
+</footer>
+
+<!-- ============ SEARCH OVERLAY ============ -->
+<div class="search-overlay" id="searchOverlay">
+  <button class="search-overlay__close" id="searchClose" aria-label="Fermer">&times;</button>
+  <div class="search-overlay__inner">
+    <input type="text" id="searchInput" class="search-overlay__input" placeholder="Rechercher une montre..." autocomplete="off">
+    <div class="search-overlay__results" id="searchResults"></div>
+  </div>
+</div>
+
+<!-- ============ PRODUCT MODAL ============ -->
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="product-modal" id="productModal">
+    <button class="product-modal__close" id="modalClose" aria-label="Fermer">&times;</button>
+    <div class="product-modal__image">
+      <img id="modalImage" src="" alt="">
+    </div>
+    <div class="product-modal__info">
+      <p class="product-modal__category" id="modalCategory"></p>
+      <h3 class="product-modal__name" id="modalName"></h3>
+      <div class="product-modal__prices">
+        <span class="product-modal__price" id="modalPrice"></span>
+        <span class="product-modal__old-price" id="modalOldPrice"></span>
+      </div>
+      <p class="product-modal__desc" id="modalDesc"></p>
+
+      <div class="qty-selector">
+        <button id="qtyMinus" aria-label="Diminuer">−</button>
+        <span id="qtyValue">1</span>
+        <button id="qtyPlus" aria-label="Augmenter">+</button>
+      </div>
+
+      <div class="product-modal__actions">
+        <button class="btn btn--dark" id="modalAddCart">Ajouter au panier</button>
+        <button class="btn btn--whatsapp" id="modalOrderWhatsapp">Commander directement</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ CART DRAWER ============ -->
+<div class="cart-overlay" id="cartOverlay"></div>
+<aside class="cart-drawer" id="cartDrawer">
+  <div class="cart-drawer__head">
+    <h3>Votre panier</h3>
+    <button id="cartClose" aria-label="Fermer">&times;</button>
+  </div>
+  <div class="cart-drawer__items" id="cartItems"></div>
+  <div class="cart-drawer__empty" id="cartEmpty">Votre panier est vide.</div>
+  <div class="cart-drawer__footer" id="cartFooter">
+    <div class="cart-drawer__total">
+      <span>Total</span>
+      <span id="cartTotal">0 DH</span>
+    </div>
+    <button class="btn btn--whatsapp cart-drawer__checkout" id="checkoutWhatsapp">Commander via WhatsApp</button>
+    <button class="cart-drawer__clear" id="clearCart">Vider le panier</button>
+  </div>
+</aside>
+
+<!-- toast -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
